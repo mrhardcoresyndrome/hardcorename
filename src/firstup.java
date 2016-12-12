@@ -5,6 +5,67 @@ import java.util.Arrays;
 
 
 public class firstup {
+    /* package whatever; // don't place package name! */
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            //программа на языке brainfuck
+            //String code = "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.<.>.<.>.";
+            String code = ",...";
+            //Номер символа из прогаммы который сейчас надо выполнить
+            int currentSymbol = 0;
+            //Данные 1:  номер активной ячейки
+            int i = 0;
+            //Данные 2: 30000 пустых ячеек
+            char[] array = new char[30000];
+            //Пока мы не выполнили всю строку
+            //надо выполить очередной символ
+            for (currentSymbol = 0; currentSymbol < code.length(); currentSymbol++) {
+                char command = code.charAt(currentSymbol);// один из символов +- <> ., []
+                switch (command) {
+                    case '+':
+                        array[i] = (char) (array[i] + 1);
+                        break;
+                    case '-':
+                        array[i] = (char) (array[i] - 1);
+                        break;
+                    case '>':
+                        i++;
+                        break;
+                    case '<':
+                        i--;
+                        break;
+                    case '.':
+                        System.out.print(array[i]);
+                        break;
+                    case ',':
+                        array[i] = scanner.next().charAt(0);
+                        break;
+                }
+            }
+        }
+
+
+    public static void main564(String[] args) {
+        String s = "123456";
+        System.out.println(s);
+        System.out.println(s.length());
+        System.out.println(s.charAt(2));
+
+        String c = "abc\"defj";
+        System.out.println(c);
+        System.out.println(c.length());
+        System.out.println(c.charAt(3));
+
+        String a = "dkl46546456'AAAA4567Aag";
+        System.out.println(a);
+        System.out.println(a.length());
+        System.out.println(a.charAt(16)=='a');
+        System.out.println(a.indexOf("A"));
+        System.out.println(a.codePointCount(11,a.length()));
+        System.out.println(a.contains("A"));
+        System.out.println();
+
+    }
 
     public static final int SIZE_X = 150;
     public static final int SIZE_Y = 35;
@@ -12,7 +73,7 @@ public class firstup {
     public static final char FULL = '#';
     public static final char[][] polex = new char[SIZE_X][SIZE_Y];
 
-    public static void  makeLoop(){
+    public static void makeLoop(){
 
     }
 
@@ -25,7 +86,7 @@ public class firstup {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main45646(String[] args) {
 
         for (int i = 0; i < SIZE_Y; i++)
             for (int j = 0; j < SIZE_X; j++)
