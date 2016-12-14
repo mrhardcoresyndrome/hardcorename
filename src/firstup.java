@@ -5,8 +5,110 @@ import java.util.Arrays;
 
 
 public class firstup {
+    public static class Smartphone {
+        public float m;
+        public float price;
+        public int x, y, z;
+        public double power;
+        public String color;
+    }
+
+    public static void showinfoaboutphone (Smartphone r) {
+        System.out.println("Масса: " + r.m);
+        System.out.println("Цена: " + r.price);
+        System.out.println("Мощность: " + r.power);
+        System.out.println("Цвет: " + r.color);
+        System.out.println("Ширина: " + r.x);
+        System.out.println("Длина: " + r.y);
+        System.out.println("Толщина: " + r.z);
+    }
+
+    public static void main(String[] args) {
+        Smartphone[] arraySmart = new Smartphone[3];
+        Smartphone s1 = new Smartphone();
+        Smartphone s2 = new Smartphone();
+        Smartphone s3 = new Smartphone();
+        s1.color = "green";
+        s1.power = 5000;
+        s1.price = 1000;
+        s1.m = 1500;
+        s1.x = 100;
+        s1.y = 200;
+        s1.z = 300;
+
+        s2.color = "red";
+        s2.power = 4800;
+        s2.price = 1100;
+        s2.m = 1800;
+        s2.x = 110;
+        s2.y = 220;
+        s2.z = 330;
+
+        s3.color = "blue";
+        s3.power = 5100;
+        s3.price = 1800;
+        s3.m = 2000;
+        s3.x = 300;
+        s3.y = 350;
+        s3.z = 400;
+
+        System.out.println("_________________");
+        showinfoaboutphone(s1);
+        System.out.println("_________________");
+        showinfoaboutphone(s2);
+        System.out.println("_________________");
+        showinfoaboutphone(s3);
+        System.out.println("_________________");
+    }
+
+    public static class Refrigerator {
+        public int x, y, z; //поле класса
+        public double power; //поле класса
+        public boolean noFrost; //поле класса
+        public float m; //поле класса
+        public String color; //поле класса
+        public int db; //поле класса
+        public  float price; //поле класса
+    }
+
+    public static void showinformationfridge(Refrigerator r) {
+        System.out.println("Color:" + r.color);
+        System.out.println("Weigth" + r.x);
+        System.out.println("Shirina" + r.m);
+        System.out.println("Price" + r.price);
+    }
+
+    public static void main777(String[] args) {
+    Refrigerator f1 = new Refrigerator();
+    Refrigerator f2 = new Refrigerator();
+    Refrigerator f3 = new Refrigerator();
+        f1.color = "red";
+        f1.m = 34;
+        f1.x = 345;
+        f1.price = 789;
+
+        f2.color = "purple";
+        f2.m = 4;
+        f2.x = 3545;
+        f2.price = 850;
+
+        f3.color = "green";
+        f3.m = 52;
+        f3.x = 654;
+        f3.price = 560;
+
+        System.out.println("_______________");
+        showinformationfridge(f1);
+        System.out.println("_______________");
+        showinformationfridge(f2);
+        System.out.println("_______________");
+        showinformationfridge(f3);
+        System.out.println("_______________");
+    }
+
+
     /* package whatever; // don't place package name! */
-        public static void main(String[] args) {
+        public static void main789797(String[] args) {
             Scanner scanner = new Scanner(System.in);
             //программа на языке brainfuck
             //String code = "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.<.>.<.>.";
