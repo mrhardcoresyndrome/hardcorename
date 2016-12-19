@@ -13,6 +13,8 @@ public class firstup {
         public String color;
     }
 
+    //http://ideone.com/2QqIgX
+
     public static void showinfoaboutphone (Smartphone r) {
         System.out.println("Масса: " + r.m);
         System.out.println("Цена: " + r.price);
